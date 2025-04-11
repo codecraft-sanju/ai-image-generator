@@ -9,7 +9,7 @@ const ImageForm = () => {
   const generateImage = async () => {
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:5000/api/generate", { prompt });
+      const res = await axios.post("https://ai-image-generator-hn9m.onrender.com/api/generate", { prompt });
       setImage(res.data.image);
     } catch (err) {
       console.error("Error generating image:", err.message);
