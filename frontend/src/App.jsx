@@ -1,3 +1,4 @@
+import { ToastContainer } from "react-toastify"; 
 import ThemeToggle from "./components/ThemeToggle";
 import ImageForm from "./components/ImageForm";
 
@@ -9,6 +10,18 @@ function App() {
         <ThemeToggle />
         <ImageForm />
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000} 
+        hideProgressBar={false}
+        newestOnTop={true}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored" 
+      />
     </div>
   );
 }
